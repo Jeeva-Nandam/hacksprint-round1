@@ -183,10 +183,9 @@
   }
 
   .card-icon {
-    width: 48px;
-    height: 48px;
+    font-size: 38px;
+    line-height: 1;
     margin: 4px 0;
-    color: var(--card-color, var(--accent));
     filter: drop-shadow(0 0 10px var(--card-color, var(--accent)));
     transition: filter 0.3s, transform 0.3s;
   }
@@ -340,71 +339,71 @@
   <div class="badge">⬡ Event Round 01</div>
 
   <h1>HACKSPRINT</h1>
+  <!-- <p class="subtitle">Annual Hackathon Challenge</p> -->
   <p class="subtitle">Dandelion Technical Event</p>
   <div class="divider"></div>
   <p class="instruction">Select <span>ONE</span> question file to begin — choose wisely.</p>
 
   <div class="cards">
 
-    <div class="card" style="--i:0" data-file="socialmedia_train.rar" onclick="pick(this)">
+    <a class="card" style="--i:0" href="socialmedia_train.rar" onclick="return pick(event, this)">
       <span class="card-num">FILE // 01</span>
-      <div class="card-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M16 16h16M16 22h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M30 34l4 4M34 34l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="34" cy="37" r="5" stroke="currentColor" stroke-width="2"/>
-        </svg>
-      </div>
-      <div class="card-title">Tap to Download</div>
-      <div class="card-sub">Contents revealed on download</div>
+      <div class="card-icon">📊</div>
+      <div class="card-title">Social Media</div>
+      <div class="card-sub">Dataset · RAR Archive</div>
       <div class="card-dl">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 4v12M6 14l6 6 6-6"/><line x1="4" y1="22" x2="20" y2="22"/>
         </svg>
-        Select &amp; Download
+        Download
       </div>
-    </div>
+    </a>
 
-    <div class="card" style="--i:1" data-file="archive (12).zip" onclick="pick(this)">
+    <a class="card" style="--i:1" href="amazon-sales.zip" onclick="return pick(event, this)">
       <span class="card-num">FILE // 02</span>
-      <div class="card-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M16 16h16M16 22h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M30 34l4 4M34 34l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="34" cy="37" r="5" stroke="currentColor" stroke-width="2"/>
-        </svg>
-      </div>
-      <div class="card-title">Tap to Download</div>
-      <div class="card-sub">Contents revealed on download</div>
+      <div class="card-icon">🗜️</div>
+      <div class="card-title">Amazon Sales</div>
+      <div class="card-sub">Dataset · ZIP Archive</div>
       <div class="card-dl">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 4v12M6 14l6 6 6-6"/><line x1="4" y1="22" x2="20" y2="22"/>
         </svg>
-        Select &amp; Download
+        Download
       </div>
-    </div>
+    </a>
 
-    <div class="card" style="--i:2" data-file="diabetes_dataset.csv" onclick="pick(this)">
+    <!-- <div class="card" style="--i:1" data-file="amazon-sales.zip" onclick="pick(this)">
+  <span class="card-num">CHALLENGE // 02</span>
+  <div class="card-icon">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
+      <path d="M16 16h16M16 22h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M30 34l4 4M34 34l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="34" cy="37" r="5" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </div>
+  <div class="card-title">Mystery File</div>
+  <div class="card-sub">Contents revealed on download</div>
+  <div class="card-dl">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4v12M6 14l6 6 6-6"/><line x1="4" y1="22" x2="20" y2="22"/>
+    </svg>
+    Select &amp; Download
+  </div>
+</div> -->
+
+    <a class="card" style="--i:2" href="diabetes_dataset.csv" onclick="return pick(event, this)">
       <span class="card-num">FILE // 03</span>
-      <div class="card-icon">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="8" y="6" width="32" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M16 16h16M16 22h16M16 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M30 34l4 4M34 34l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="34" cy="37" r="5" stroke="currentColor" stroke-width="2"/>
-        </svg>
-      </div>
-      <div class="card-title">Tap to Download</div>
-      <div class="card-sub">Contents revealed on download</div>
+      <div class="card-icon">🩺</div>
+      <div class="card-title">Diabetes</div>
+      <div class="card-sub">Dataset · CSV Format</div>
       <div class="card-dl">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 4v12M6 14l6 6 6-6"/><line x1="4" y1="22" x2="20" y2="22"/>
         </svg>
-        Select &amp; Download
+        Download
       </div>
-    </div>
+    </a>
 
   </div>
 
@@ -415,28 +414,25 @@
 <script>
   let picked = false;
 
-  function pick(card) {
-    if (picked) return;
+  function pick(e, card) {
+    if (picked) { e.preventDefault(); return false; }
     picked = true;
 
+    // Mark chosen
     card.classList.add('selected');
 
+    // Lock others
     document.querySelectorAll('.card').forEach(c => {
       if (c !== card) c.classList.add('locked');
     });
 
+    // Update status
+    const title = card.querySelector('.card-title').textContent;
     const status = document.getElementById('status');
-    status.textContent = `▶ Challenge ${card.querySelector('.card-num').textContent.slice(-2).trim()} locked in — downloading . . .`;
+    status.textContent = `▶ ${title} locked in — downloading . . .`;
     status.classList.add('active');
 
-    // Trigger download without exposing filename in the DOM href
-    const file = card.getAttribute('data-file');
-    const a = document.createElement('a');
-    a.href = file;
-    a.download = '';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    return true; // allow href download
   }
 </script>
 </body>
